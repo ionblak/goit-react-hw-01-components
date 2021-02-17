@@ -10,13 +10,11 @@ const Statistics = ({ title, stats }) => {
 
       <ul className={styles.list}>
         {stats.map(item => (
-          <li
-            className={styles.item}
-            style={{ backgroundColor: getRandColor() }}
+          <StatisticItem
             key={item.id}
-          >
-            <StatisticItem label={item.label} percentage={item.percentage} />
-          </li>
+            label={item.label}
+            percentage={item.percentage}
+          />
         ))}
       </ul>
     </section>
@@ -32,10 +30,3 @@ Statistics.propTypes = {
     }),
   ).isRequired,
 };
-function getRandColor() {
-  let color = Math.floor(Math.random() * Math.pow(256, 3)).toString(16);
-  while (color.length < 6) {
-    color = '0' + color;
-  }
-  return '#' + color;
-}
