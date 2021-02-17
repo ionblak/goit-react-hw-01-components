@@ -1,0 +1,20 @@
+.tabel {
+  width: 270px;
+}
+.item {
+  width: 90px;
+  padding: 5px;
+  text-align: center;
+  background-color: blueviolet;
+  color: antiquewhite;
+  border: 1px solid grey;
+}
+.first {
+  composes: item;
+  background-color: hotpink;
+  color: black;
+}
+.second {
+  composes: item;
+  background-color: indigo;
+}

@@ -1,0 +1,24 @@
+.statistics {
+  width: 270px;
+  margin-bottom: 20px;
+}
+.title {
+  margin: 0;
+  padding: 15px;
+  color: honeydew;
+  text-align: center;
+  background: grey;
+}
+
+.list {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.item {
+  color: honeydew;
+  padding: 5px;
+  width: calc(270px / 5);
+}

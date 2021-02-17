@@ -1,0 +1,19 @@
+.item {
+  display: flex;
+  align-items: center;
+  width: 270px;
+  padding: 5px;
+  margin-bottom: 10px;
+  /* border: 1px solid grey; */
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5),
+    1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.status {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
